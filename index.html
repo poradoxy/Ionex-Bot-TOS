@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Terms of Service — {{BOT_NAME}}</title>
+  <link rel="stylesheet" href="styles.css" />
+  <meta name="description" content="Terms of Service for {{BOT_NAME}} (Discord bot)" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1>{{BOT_NAME}} — Terms of Service</h1>
+      <p class="last-updated">Last updated: <time datetime="2025-08-27">2025-08-27</time></p>
+      <p class="sub">Developer: <strong>{{DEVELOPER_NAME_OR_HANDLE}}</strong> · Support: <a href="{{SUPPORT_INVITE}}" target="_blank" rel="noopener">Support Server</a> · Invite: <a href="{{BOT_INVITE}}" target="_blank" rel="noopener">Add to Server</a></p>
+    </div>
+  </header>
+
+  <main class="container">
+    <article class="tos">
+      <section>
+        <h2>1. Acceptance of Terms</h2>
+        <p>
+          By using {{BOT_NAME}} (the "Bot") on Discord, you agree to these Terms of Service ("Terms"). If you do not agree, do not add or use the Bot.
+        </p>
+      </section>
+
+      <section>
+        <h2>2. Changes</h2>
+        <p>
+          We may update these Terms at any time. When we make material changes, we will post the updated date above. Continued use after changes constitutes acceptance.
+        </p>
+      </section>
+
+      <section>
+        <h2>3. Intended Use</h2>
+        <p>
+          The Bot is provided to enhance Discord servers with features described in the Bot's documentation. You may only use the Bot in accordance with these Terms and Discord's Terms of Service and Community Guidelines.
+        </p>
+      </section>
+
+      <section>
+        <h2>4. Account & Permissions</h2>
+        <p>
+          The Bot requires certain Discord permissions to operate. You are responsible for the permissions you grant. Do not share administrative tokens or credentials. The Bot's developer is not responsible for damage caused by misconfigured permissions.
+        </p>
+      </section>
+
+      <section>
+        <h2>5. User Content & Commands</h2>
+        <p>
+          Users may provide input to the Bot via commands, messages, files, or other content ("User Content"). You retain ownership of your User Content. By providing User Content you grant the developer a non-exclusive license to use, store, and display it to provide the Bot's services and for troubleshooting and improvement.
+        </p>
+      </section>
+
+      <section>
+        <h2>6. Data Collection & Logging</h2>
+        <p>
+          The Bot may log certain data (e.g., command usage, user IDs, message content, server IDs, timestamps) to operate, debug, and improve features. Sensitive information should not be sent to the Bot. For a full description of what is collected and how it's used, see the Privacy Policy: <a href="{{PRIVACY_POLICY_URL}}">{{PRIVACY_POLICY_URL}}</a>.
+        </p>
+      </section>
+
+      <section>
+        <h2>7. Moderation & Bans</h2>
+        <p>
+          The developer may block or ban users or servers that violate these Terms, abuse the Bot, or attempt to reverse-engineer or tamper with the Bot. Appeals may be made through the Support Server.
+        </p>
+      </section>
+
+      <section>
+        <h2>8. Paid Features & Refunds</h2>
+        <p>
+          If the Bot offers paid/premium features, purchases are subject to the terms posted on the purchase page. Refunds are handled as described there. The developer may suspend paid features for accounts violating these Terms.
+        </p>
+      </section>
+
+      <section>
+        <h2>9. Third-Party Services</h2>
+        <p>
+          The Bot may use third-party APIs or services. Use of those services may be subject to additional terms and privacy practices of those providers.
+        </p>
+      </section>
+
+      <section>
+        <h2>10. Intellectual Property</h2>
+        <p>
+          The Bot and its code (excluding User Content) are the developer's intellectual property. You may not copy, modify, or distribute the Bot's code unless a license is provided.
+        </p>
+      </section>
+
+      <section>
+        <h2>11. Disclaimers</h2>
+        <p>
+          THE BOT IS PROVIDED "AS IS". TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE DEVELOPER DISCLAIMS ALL WARRANTIES, EXPRESS OR IMPLIED, INCLUDING FITNESS FOR A PARTICULAR PURPOSE.
+        </p>
+      </section>
+
+      <section>
+        <h2>12. Limitation of Liability</h2>
+        <p>
+          IN NO EVENT WILL THE DEVELOPER BE LIABLE FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES ARISING FROM THE BOT'S USE OR INABILITY TO USE IT.
+        </p>
+      </section>
+
+      <section>
+        <h2>13. Governing Law</h2>
+        <p>
+          These Terms are governed by the laws of the developer's jurisdiction: <strong>{{GOVERNING_JURISDICTION}}</strong>, unless otherwise required by applicable law.
+        </p>
+      </section>
+
+      <section>
+        <h2>14. Contact</h2>
+        <p>
+          For questions or legal notices contact: <a href="mailto:{{CONTACT_EMAIL}}">{{CONTACT_EMAIL}}</a> or visit the Support Server: <a href="{{SUPPORT_INVITE}}">{{SUPPORT_INVITE}}</a>.
+        </p>
+      </section>
+
+      <footer class="tos-actions">
+        <button id="printBtn" type="button">Print</button>
+      </footer>
+    </article>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>&copy; <span id="year"></span> {{DEVELOPER_NAME_OR_HANDLE}} · {{BOT_NAME}}</p>
+    </div>
+  </footer>
+
+  <script>
+    // Small enhancements: print button and dynamic year
+    document.getElementById('printBtn').addEventListener('click', function () {
+      window.print();
+    });
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
